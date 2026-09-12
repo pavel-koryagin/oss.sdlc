@@ -31,6 +31,7 @@
     - If no external integration is affected by the test scenario, test locally. Do not use the cloud sandbox.
     - If external integrations are affected, test local while you develop and test E2E in the sandbox before you deliver.
     - If the deployment process itself is affected by the task requirements, test in the sandbox.
+    - When using the sandbox, skip the components not used in the scenarios you are going to test. E.g. if the scenario is auth, then you don't need an AgentMail inbox.
 
 ## Documentation
 
