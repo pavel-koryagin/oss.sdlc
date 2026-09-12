@@ -8,6 +8,12 @@ Feel free to use these var values including secrets in your sandbox deployments 
 
 Feel free to edit everything in the accounts, accessible with those secrets. They are your sandboxes.
 
+## Scoping
+
+Use a YYMMDDHHMM suffix in resource ids of your deployments to logically connect the deployments in different providers.
+
+Generate it from system UTC time when you need it first, and then keep using the same value during the session.
+
 ## GCP
 
 - To sandbox GCP project, deploy with GCP Infrastructure Manager. If repo's normal deployment is not built on GCP Infrastructure Manager, do not use it with sandbox.
