@@ -8,7 +8,7 @@ Wire up models, server actions, and controllers for a designed feature. Assumes 
 
 ### Step 1: Plan Models & Logic
 
-Append the Models and Server Actions sections to the spec file. Follow the principles from [[webapp.nextjs/code-guidelines.data|data guidelines]]
+Append the Models and Server Actions sections to the spec file. Follow the principles from [data guidelines](../webapp.nextjs/code-guidelines.data.md)
 
 **Process**:
 1. Review view props — what data do they require?
@@ -49,7 +49,7 @@ If no model changes are required — reduce the part.
 
 ### Step 2: Implement Models
 
-Create the persistence layer and update views. Follow [[webapp.nextjs/code-guidelines.data|data guidelines]]
+Create the persistence layer and update views. Follow [data guidelines](../webapp.nextjs/code-guidelines.data.md)
 
 **Process**:
 1. Create Drizzle schemas
@@ -64,9 +64,9 @@ Create the persistence layer and update views. Follow [[webapp.nextjs/code-guide
 Wire everything together with controllers and server actions.
 
 **Process**:
-1. Create/update server actions per [[webapp.nextjs/code-guidelines.server-actions|server action guidelines]]
-2. Create/update client controllers per [[webapp.nextjs/code-guidelines.components|component guidelines]]
-3. Write E2E tests per [[webapp.nextjs/code-guidelines.tests|test guidelines]]
+1. Create/update server actions per [server action guidelines](../webapp.nextjs/code-guidelines.server-actions.md)
+2. Create/update client controllers per [component guidelines](../webapp.nextjs/code-guidelines.components.md)
+3. Write E2E tests per [test guidelines](../webapp.nextjs/code-guidelines.tests.md)
 
 **Validation**: Feature works end-to-end. Tests pass.
 

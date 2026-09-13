@@ -5,7 +5,7 @@ Convert PWA to Android app for Google Play Store using Bubblewrap.
 ## Prerequisites
 
 - PWA deployed to production URL with valid manifest
-- [[webapp.nextjs/icons|Icons]] are all correct
+- [Icons](icons.md) are all correct
 - `npm install -g @bubblewrap/cli`
 
 All the shell commands in this guide assume running from `android/`.

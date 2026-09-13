@@ -51,7 +51,7 @@ export const createItemAction = authActionClient
 
 - **Use `authActionClient`** - For authenticated actions. Thoroughly choose between `authActionClient` and `actionClient` based on whether it is allowed to call this action from guests.
 - **Void output** - When returning only the fact of success, use `.outputSchema(z.void())`
-- **Throw errors directly** - Do not invent alternative ways of returning errors. All errors should be thrown per [[webapp.nextjs/code-guidelines.errors|error-handling guidelines]]
+- **Throw errors directly** - Do not invent alternative ways of returning errors. All errors should be thrown per [error-handling guidelines](code-guidelines.errors.md)
 
 ## Security Best Practices
 

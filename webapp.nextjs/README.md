@@ -2,12 +2,12 @@
 
 - `webapp.nextjs/` - web app standards. Next.js-based stack.
   - `code-guidelines.*` - code style to adhere to.
-    - [[webapp.nextjs/code-guidelines.data|code-guidelines.data]] — Zod schemas, Drizzle database schemas, DTOs, and test samples.
-    - [[webapp.nextjs/code-guidelines.components|code-guidelines.components]] — Layouts, views, forms, and client controllers.
-    - [[webapp.nextjs/code-guidelines.server-actions|code-guidelines.server-actions]].
-    - [[webapp.nextjs/code-guidelines.errors|code-guidelines.errors]] — Error-handling.
-    - [[webapp.nextjs/code-guidelines.tests|code-guidelines.tests]].
-    - [[webapp.nextjs/code-guidelines.storybook|code-guidelines.storybook]] — Storybook stories.
-    - [[webapp.nextjs/code-guidelines.android|code-guidelines.android]] — Android TWA wrapper and Google Play publishing.
-  - [[webapp.nextjs/design-guidelines|design-guidelines]] — Visual design principles and libraries.
-  - [[webapp.nextjs/icons|icons]] — App icon design and generation.
+    - [code-guidelines.data](code-guidelines.data.md) — Zod schemas, Drizzle database schemas, DTOs, and test samples.
+    - [code-guidelines.components](code-guidelines.components.md) — Layouts, views, forms, and client controllers.
+    - [code-guidelines.server-actions](code-guidelines.server-actions.md).
+    - [code-guidelines.errors](code-guidelines.errors.md) — Error-handling.
+    - [code-guidelines.tests](code-guidelines.tests.md).
+    - [code-guidelines.storybook](code-guidelines.storybook.md) — Storybook stories.
+    - [code-guidelines.android](code-guidelines.android.md) — Android TWA wrapper and Google Play publishing.
+  - [design-guidelines](design-guidelines.md) — Visual design principles and libraries.
+  - [icons](icons.md) — App icon design and generation.

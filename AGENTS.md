@@ -1,2 +1,1 @@
-- In Markdown, prefer wiki links, from the repository root.
 - When editing existing playbooks, do not improve their format unless explicitly requested. Keep the diff minimal reasonable.

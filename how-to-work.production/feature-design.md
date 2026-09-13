@@ -92,9 +92,9 @@ As a [user type], I want to [action] so that [benefit].
 Build the UI layer with hardcoded mock data. Views are pure presentation — no business logic yet.
 
 **Process**:
-1. Create view components per [[webapp.nextjs/code-guidelines.components|component guidelines]]
+1. Create view components per [component guidelines](../webapp.nextjs/code-guidelines.components.md)
 2. Use placeholder props (strings, mock objects)
-3. Create Storybook stories per [[webapp.nextjs/code-guidelines.storybook|Storybook guidelines]]
+3. Create Storybook stories per [Storybook guidelines](../webapp.nextjs/code-guidelines.storybook.md)
 4. Cover all visual states: empty, loading, error, success, edge cases
 
 - Tick the items in the feature doc as you go.
