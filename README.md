@@ -8,17 +8,7 @@ I'm sharing here some of my SDLC playbooks.
 - `how-to-work.prototyping/` - vibe prototyping stage. Fast and dirty, saving humans time.
   - [[how-to-work.prototyping/single-task.e2e|single-task.e2e]] — When requesting a single end-to-end task, describe the expected outcomes and add this file.
 - `principles/` - platform-agnostic SDLC/coding/design principles.
-- `webapp.nextjs/` - web app standards. Next.js-based stack.
-  - `code-guidelines.*` - code style to adhere to.
-    - [[webapp.nextjs/code-guidelines.data|code-guidelines.data]] — Zod schemas, Drizzle database schemas, DTOs, and test samples.
-    - [[webapp.nextjs/code-guidelines.components|code-guidelines.components]] — Layouts, views, forms, and client controllers.
-    - [[webapp.nextjs/code-guidelines.server-actions|code-guidelines.server-actions]].
-    - [[webapp.nextjs/code-guidelines.errors|code-guidelines.errors]] — Error-handling.
-    - [[webapp.nextjs/code-guidelines.tests|code-guidelines.tests]].
-    - [[webapp.nextjs/code-guidelines.storybook|code-guidelines.storybook]] — Storybook stories.
-    - [[webapp.nextjs/code-guidelines.android|code-guidelines.android]] — Android TWA wrapper and Google Play publishing.
-  - [[webapp.nextjs/design-guidelines|design-guidelines]] — Visual design principles and libraries.
-  - [[webapp.nextjs/icons|icons]] — App icon design and generation.
+- `webapp.nextjs/` - web app standards. Next.js-based stack. See Index in [[webapp.nextjs/README]].
 - [[preferences.cursor|preferences.cursor]] — Add when using Cursor.
 - [[preferences.sandbox|preferences.sandbox]] — Add when using sandbox environments.
 - `snippets/` — Helpful snippets for situations not covered by the playbooks.
