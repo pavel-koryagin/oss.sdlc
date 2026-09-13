@@ -21,6 +21,11 @@
 - After every subagent, compare the delivered result with the expected result.
 - When a broken deliverable is identified, loop until it is repaired.
 
+## Planning
+
+- Write down your plan and its work chunks before starting execution.
+- For each chunk determine the relevant playbooks from the Index section of https://raw.githubusercontent.com/pavel-koryagin/oss.sdlc/v1/README.md and ensure the respective subagent gets their URLs (or file paths if available) with the task so it does not have to search for the relevant standards itself.
+
 ## QA
 
 - Automated tests are not required. Add them only when they help get a working solution faster.
