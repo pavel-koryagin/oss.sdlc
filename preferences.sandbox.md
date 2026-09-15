@@ -8,6 +8,8 @@ Feel free to use these var values including secrets in your sandbox deployments 
 
 Feel free to edit everything in the accounts, accessible with those secrets. They are your sandboxes.
 
+If you deployed anything to the sandbox, include the public URLs into your testing report.
+
 ## Scoping
 
 Use a YYMMDDHHMM suffix in resource ids of your deployments to logically connect the deployments in different providers.
