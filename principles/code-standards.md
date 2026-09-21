@@ -34,6 +34,11 @@ function addUniqueTodo(todos: Todo[], title: string): void {
 }
 ```
 
+## Naming
+
+- Function names start with a verb
+  - Exception: when functions work as DSL operators to define a structure, they are nouns
+
 ## Decomposition
 
 Apply wisely, do not miss when a rule seems relevant but semantically is not.
