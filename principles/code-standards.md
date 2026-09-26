@@ -49,6 +49,8 @@ Apply wisely, do not miss when a rule seems relevant but semantically is not.
 
 ## Tests
 
+Exception: do not apply these rules to an E2E Playwright test – their style is completely independent of this. If you work on a Playwright test, you must be provided with a separate playbook for that.
+
 ### Follow AAA
 
 Format tests as Arrange, Act, Assert.
