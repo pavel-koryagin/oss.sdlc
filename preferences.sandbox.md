@@ -22,6 +22,8 @@ Generate it from system UTC time when you need it first, and then keep using the
 - In sandbox, create DBs in a single shared instance. Do not create new DB instances.
     - Postgres: `postgres-db`
     - Other (Mongo, Redis, etc.) - find an instance. If absent, create a generic one. Use as multi-tenant.
+- Prefer default service domains.
+    - In case you need custom domains, use zone from GCP_DNS_SANDBOX_ZONE_ID. Generate a per-session random 8-letter suffix and ensure it is added to each of the subdomains you create.
 
 ## AgentMail
 
