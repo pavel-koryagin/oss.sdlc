@@ -159,3 +159,37 @@ expect(formatTodoCount(1)).toBe('1 todo');
 expect(formatTodoCount(2)).toBe('2 todos');
 ```
 
+## Never hide the problems. Never rename unexpected problems
+
+This is a big anti-pattern very popular across both LLMs and human developers.
+
+Take this example:
+
+```sh
+if [ -f "$ROOT_DIR/agent-station/secrets.tgz.enc" ]; then
+  decrypt "$ROOT_DIR/agent-station/secrets.tgz.enc"
+fi
+```
+
+If you weren't told explicitly that the file is optional, this is a very very bad way to prevent errors. If you have a specification that the file with some data or configuration should exist there, never assume it is normal that it could be absent.
+
+The default assumption must be: if we know it is used, then it is mandatory.
+
+The opposite problem is to anticipate potential errors and detect them when you weren't told explicitly to do so.
+
+```sh
+if [ ! -f "$ROOT_DIR/agent-station/secrets.tgz.enc" ]; then
+  echo "Required secrets archive is missing: $ROOT_DIR/agent-station/secrets.tgz.enc" >&2
+  exit 1
+fi
+
+decrypt "$ROOT_DIR/agent-station/secrets.tgz.enc"
+```
+
+This obfuscates normal error messages that may contain more information of what's actually happening there inside. The main operator has its own error handling. Let its problems bubble up. Your code will be clean and your errors will be sometimes cryptic to the end user, but more diagnostics friendly.
+
+Remember, in case of abnormal flow problems, you do not have to make the messages user friendly. The user cannot fix them in most of cases. Let them bubble, and in most cases, something like Sentry will capture them and keep for the developers Wrapping it into a friendly generic text for the user: "Something unexpected has happened. Our team is alerted."
+
+- Never hide the problems
+- Never rename the errors
+- Unless explicitly requested
