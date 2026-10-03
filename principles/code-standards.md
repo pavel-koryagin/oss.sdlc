@@ -22,7 +22,7 @@ return incompleteTodos;
 Comment functions the same way. JSDoc-like blocks are allowed but not required. Maintain them when they exist or are requested. Otherwise, describe the function's specific job in one sentence.
 
 ```ts
-// Add a todo unless one with the same title already exists.
+// Add a todo unless one with the same title already exists
 function addUniqueTodo(todos: Todo[], title: string): void {
   // Check whether the todo exists
   const exists = todos.some(todo => todo.title === title);
@@ -33,6 +33,8 @@ function addUniqueTodo(todos: Todo[], title: string): void {
   }
 }
 ```
+
+Avoid the full stop sign in the end of a one-line comment.
 
 ## Naming
 
