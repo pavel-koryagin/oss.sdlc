@@ -193,3 +193,9 @@ Remember, in case of abnormal flow problems, you do not have to make the message
 - Never hide the problems
 - Never rename the errors
 - Unless explicitly requested
+
+## Treating the old code
+
+If you are AI: plan your work to minimize final diff. Understand the preceeding code. Dig the documents. Avoid revolutions if not explicitly asked. Report the architectural problems and violations of the standards you see. Suggest improvements, but make conservative assumptions. Document your decisions and assumptions.
+
+If you are a human: paying a little bit of tech debt along with solving a task is good. In a perfect case deliver in separate PRs, but combined and explained is also acceptable.
