@@ -10,6 +10,14 @@ Feel free to edit everything in the accounts, accessible with those secrets. The
 
 If you deployed anything to the sandbox, include the public URLs into your testing report.
 
+### Your Box with AgentMail
+
+Know the address from AGENTMAIL_YOUR_BOX_ADDRESS.
+
+Send and read mail with the key from AGENTMAIL_YOUR_BOX_API_KEY.
+
+Use for tests and reporting.
+
 ## Scoping
 
 Use a YYMMDDHHMM suffix in resource ids of your deployments to logically connect the deployments in different providers.
@@ -25,10 +33,11 @@ Generate it from system UTC time when you need it first, and then keep using the
 - Prefer default service domains.
     - In case you need custom domains, use zone from GCP_DNS_SANDBOX_ZONE_ID. Generate a per-session random 8-letter suffix and ensure it is added to each of the subdomains you create.
 
-## AgentMail
+## AgentMail Sandbox
 
 - New inbox per sandbox deployment, format `{something}-{YYMMDDHHMM}@agentmail.to`. Configure webhook if needed.
 - When the account limit is exhausted, delete the oldest inbox.
+- Org admin key is in AGENTMAIL_API_KEY. Do not confuse with your own box - that one is non-admin and is in a different org.
 
 ## OpenRouter
 
