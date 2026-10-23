@@ -7,6 +7,8 @@
 - Strip `View` from the component title
 - For pages: use `wrapIframe` option and `Pages` category
 - For components: drop `wrapIframe` option, use `Components` category, drop Resolutions story
+- No state, neither direct (useState, useArgs) nor imitated, unless the particular demonstration is agreed to be non-static. Show every possible state as its own slot with fixed props
+- Event handlers are stubs by `actions()`, no effective handlers in stories, unless agreed for the particular case
 
 *Example*
 ```typescript
