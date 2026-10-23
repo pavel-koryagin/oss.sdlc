@@ -5,6 +5,8 @@ Examples are in TypeScript, but the principles we state here are for every langu
 ## Architecture and Taste
 
 - Do not invent creative solutions for typical tasks. Recall mainstream stereotypical snippets and use them
+- Optimize code by readability; make it easier to review. In this favor, sacrifice CPU/memory where required
+- DRY moderately, not aggressively. Explicit code is easier to review than new abstractions
 
 ## Comments as an Algorithm Outline
 
