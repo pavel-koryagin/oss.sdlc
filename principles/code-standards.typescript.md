@@ -53,3 +53,7 @@ Bad:
 ```
 
 Reason: `union()` is semantic, its inline implementation is cryptic.
+
+## Paths
+
+Build filesystem paths with `/`-separated template strings instead of `node:path` utils. That's sufficient and is better for readability.
