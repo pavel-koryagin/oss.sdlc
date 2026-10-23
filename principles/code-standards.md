@@ -2,20 +2,26 @@
 
 Examples are in TypeScript, but the principles we state here are for every language we use.
 
+## Architecture and Taste
+
+- Do not invent creative solutions for typical tasks. Recall mainstream stereotypical snippets and use them
+
 ## Comments as an Algorithm Outline
 
 Add a short comment to every logical block. Reading only the comments should reveal the algorithm.
 
+For each comment ask yourself, is this comment describing tricky implementation decisions or just naming a block for the visual rhythm? Tricky - elaborate concise but clear in as many words as it takes. Naming only - 1-3 words are better than 20 words and the purpose is better than the implementation details
+
 ```ts
-// Find incomplete todos
+// Find incomplete
 const incompleteTodos = todos.filter(todo => !todo.completed);
 
-// Complete each todo
+// Complete each
 for (const todo of incompleteTodos) {
   todo.completed = true;
 }
 
-// Return the completed todos
+// Return
 return incompleteTodos;
 ```
 
@@ -24,17 +30,37 @@ Comment functions the same way. JSDoc-like blocks are allowed but not required. 
 ```ts
 // Add a todo unless one with the same title already exists
 function addUniqueTodo(todos: Todo[], title: string): void {
-  // Check whether the todo exists
+  // Check exists
   const exists = todos.some(todo => todo.title === title);
 
-  // Add the todo when it is new
+  // Add new
   if (!exists) {
     todos.push({ title, completed: false });
   }
 }
 ```
 
-Avoid the full stop sign in the end of a one-line comment.
+In types and schemas, also identify blocks of fields. Show them with an empty line and a block comment
+
+```ts
+type Todo = {
+  // Linking
+  id: string;
+  listId: string;
+  createdBy: string;
+
+  // Data
+  title: string; // Unique within TodoList.items
+
+  // Completion
+  completed: boolean;
+  completedAt: Date | null;
+};
+```
+
+- Avoid the full stop sign in the end of a one-line comment
+- In the comments, reference things by their identifier from our code when available, do not humanize them
+- Apply the general wisdom principle “Do not make self-evident comments” to explanatory comments only. A visual rhythm comment is allowed to repeat its block (e.g. be identical the name of the function called in that block if that name already describes enough). Avoid finding synonyms to hide the repeats, gravitate to the block’s word choice
 
 ## Naming
 
