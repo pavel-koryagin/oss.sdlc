@@ -9,6 +9,9 @@
 - For components: drop `wrapIframe` option, use `Components` category, drop Resolutions story
 - No state, neither direct (useState, useArgs) nor imitated, unless the particular demonstration is agreed to be non-static. Show every possible state as its own slot with fixed props
 - Event handlers are stubs by `actions()`, no effective handlers in stories, unless agreed for the particular case
+- Avoid loops and other optimizations. Between explicit code and extracting a function or implementing a loop, prefer the explicit code
+  - Loops are allowed when they introduce no new concepts, e.g. a loop over a fixture collection or over a list of cases
+  - Complex wrapping or mocked contents may be encapsulated into a new component
 
 *Example*
 ```typescript

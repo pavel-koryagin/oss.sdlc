@@ -187,6 +187,17 @@ expect(formatTodoCount(1)).toBe('1 todo');
 expect(formatTodoCount(2)).toBe('2 todos');
 ```
 
+### Explicit Code
+
+Avoid loops and other optimizations. Between explicit code and extracting a function or implementing a loop, prefer the explicit code.
+
+- For-each loops are allowed when they introduce no new concepts, e.g. a loop over a fixture collection or over a list of cases
+- Complex wrapping or mocks may be encapsulated into a new helper
+
+**IMPORTANT**: conditionals (including ternary, including loops; but excluding for-each loops over constant/fixture data allowed above) should be prohibited in test scenarios. Every exemption needs a very strong justification.
+- *Why:* Conditionals turn linear code we can simply trust into software that needs its own layer of testing.
+- When we really need a conditional, consider extracting it into a helper function in the test library, that itself is tested separately.
+
 ## Never hide the problems. Never rename unexpected problems
 
 This is a big anti-pattern very popular across both LLMs and human developers.
