@@ -12,6 +12,7 @@
 - Avoid loops and other optimizations. Between explicit code and extracting a function or implementing a loop, prefer the explicit code
   - Loops are allowed when they introduce no new concepts, e.g. a loop over a fixture collection or over a list of cases
   - Complex wrapping or mocked contents may be encapsulated into a new component
+- Empty line between slots is mandatory
 
 *Example*
 ```typescript
