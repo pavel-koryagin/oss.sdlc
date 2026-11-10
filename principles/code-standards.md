@@ -200,6 +200,18 @@ Avoid loops and other optimizations. Between explicit code and extracting a func
 - *Why:* Conditionals turn linear code we can simply trust into software that needs its own layer of testing.
 - When we really need a conditional, consider extracting it into a helper function in the test library, that itself is tested separately.
 
+## Avoid renaming functions, vars, anything
+
+```ts
+// Bad - transparency is lost
+const wait = options.sleep ?? sleep;
+
+// Good - the original name is preserved intact
+const effectiveSleep = options.sleep ?? sleep;
+```
+
+Code is not a poem, prefer boring consistent wording.
+
 ## Never hide the problems. Never rename unexpected problems
 
 This is a big anti-pattern very popular across both LLMs and human developers.
